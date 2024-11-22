@@ -1,0 +1,30 @@
+[project]
+name = "python-click-playground"
+version = "0.1"
+description = "This is a playground to learn about creating Python application using Click library."
+readme = "README.md"
+authors = [{name = "VH"}]
+license = {text = "Apache-2.0"}
+requires-python = ">=3.8"
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+    "click"
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+Homepage = "https://github.com/Silverbullet069/python-click-playground"
+Changelog = "https://github.com/Silverbullet069/python-click-playground/releases"
+Issues = "https://github.com/Silverbullet069/python-click-playground/issues"
+CI = "https://github.com/Silverbullet069/python-click-playground/actions"
+
+[project.scripts]
+python-click-playground = "python_click_playground.cli:cli"
+
+[project.optional-dependencies]
+test = ["pytest"]
